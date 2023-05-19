@@ -1,19 +1,25 @@
 # Tugas-7-Pemograman-Web
 Langkah - langkah Praktikum
-1. Mengaktifkan ekstentsi tersebut, melalu XAMPP Control Panel, pada bagian Apache klik Config -> PHP.ini
+#1. Mengaktifkan ekstentsi tersebut, melalu XAMPP Control Panel, pada bagian Apache klik Config -> PHP.ini
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/31607a6a-a174-4e45-9950-2eacbafe72d4)
-2. Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+
+#2. Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/7f42900f-5bc1-40ff-b419-ae6ddde73b4d)
-3. Instalasi Codeigniter 4
+#3. Instalasi Codeigniter 4
 Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara manual dan menggunakan composer. Pada praktikum ini kita menggunakan cara manual. http://localhost/lab7_php_ci/ci4/public/
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/34b5637c-5b70-43d1-97ae-b479833e5ef4)
-4. Menjalankan CLI (Command Line Interface)
+#4. Menjalankan CLI (Command Line Interface)
 Menjalankan CLI (Command Line Interface) Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk mengakses CLI buka terminal/command prompt.
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/3b4fc1f6-8704-4435-ba17-23a46ba3817d)
+
 Arahkan lokasi direktori sesuai dengan direktori kerja project dibuat (xampp/htdocs/lab7_php_ci/ci4/)
 PHP Spark
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/f9eaf556-fbca-4ef3-8f2a-a2c809b8d90a)
-5. Mengaktifkan Mode Debugging
+
+#5. Mengaktifkan Mode Debugging
 Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program. Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan pesan kesalahan seperti berikut.
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/2374c62e-b6e7-4c92-b069-6da6c60f4c49)
 Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRONMENT menjadi development.
@@ -22,7 +28,7 @@ Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai varia
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/8d80b3cf-c5f1-4176-8d7c-cfbe6d5c7cf3)
 Contoh error yang terjadi. Untuk mencoba error tersebut, ubah kode pada file app/Controller/Home.php hilangkan titik koma pada akhir kode.
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/c2fdb432-56e6-4def-8cf2-f8908550c005)
-6. Membuat Routes Baru
+#6. Membuat Routes Baru
 Tambahkan code pada routes.php
 
 $routes->get('/about', 'Page::about');
@@ -37,7 +43,7 @@ Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http:
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/6ed85380-6d6c-49ad-8879-ec2b4cd87f93)
 Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
 
-7. Membuat Controller
+#7. Membuat Controller
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
 <?php
 
@@ -60,7 +66,7 @@ class Page extends BaseController
 }
 Berikut hasil nya
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/8581ba29-c055-41b9-b114-eac3c54de5ae)
-8. Auto Routing
+#8. Auto Routing
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false.
 
 $routes->setAutoRoute(true);
@@ -72,7 +78,7 @@ Tambahkan method baru pada Controller Page seperti berikut.
     }
 Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/6665ea2e-4ba0-4a8d-9ba9-9e0d55386acd)
-9. Membuat View
+#9. Membuat View
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
 
 <!DOCTYPE html>
@@ -98,7 +104,7 @@ public function about()
     }
 Lalu refresh halaman tersebut
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/5ff96271-0fcf-4251-8c08-ab54e5759f27)
-10. Membuat Layout Web dengan CSS
+#10. Membuat Layout Web dengan CSS
 Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada codeigniter. Yang perlu diketahui adalah, pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori public.
 
 Buat file css pada direktori public dengan nama style.css (copy file dari praktikum lab4_layout. Kita akan gunakan layout yang pernah dibuat pada praktikum 4.
