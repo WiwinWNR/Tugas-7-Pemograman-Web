@@ -16,6 +16,7 @@ Menjalankan CLI (Command Line Interface) Codeigniter 4 menyediakan CLI untuk mem
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/3b4fc1f6-8704-4435-ba17-23a46ba3817d)
 
 Arahkan lokasi direktori sesuai dengan direktori kerja project dibuat (xampp/htdocs/lab7_php_ci/ci4/)
+
 PHP Spark
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/f9eaf556-fbca-4ef3-8f2a-a2c809b8d90a)
 
@@ -24,6 +25,7 @@ Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk menge
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/2374c62e-b6e7-4c92-b069-6da6c60f4c49)
 Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRONMENT menjadi development.
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/0115cddb-6763-4fd7-a6c4-0ec005f1b7dd)
+
 Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable CI_ENVIRONMENT menjadi development.
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/8d80b3cf-c5f1-4176-8d7c-cfbe6d5c7cf3)
 Contoh error yang terjadi. Untuk mencoba error tersebut, ubah kode pada file app/Controller/Home.php hilangkan titik koma pada akhir kode.
