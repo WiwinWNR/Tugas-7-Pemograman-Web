@@ -47,7 +47,8 @@ PHP Spark Routes
 
 Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/6ed85380-6d6c-49ad-8879-ec2b4cd87f93)
-Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
+Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. 
+Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
 
 # 7. Membuat Controller
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
@@ -71,7 +72,9 @@ class Page extends BaseController
     }
 }
 Berikut hasil nya
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/8581ba29-c055-41b9-b114-eac3c54de5ae)
+
 # 8. Auto Routing
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false.
 
