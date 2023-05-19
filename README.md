@@ -52,6 +52,7 @@ Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller y
 
 # 7. Membuat Controller
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
+
 <?php
 
 namespace App\Controllers;
