@@ -71,6 +71,7 @@ class Page extends BaseController
         echo "Ini halaman FAQ";
     }
 }
+
 Berikut hasil nya
 
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/8581ba29-c055-41b9-b114-eac3c54de5ae)
@@ -86,7 +87,9 @@ Tambahkan method baru pada Controller Page seperti berikut.
         echo "ini halaman Term of Services";
     }
 Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/6665ea2e-4ba0-4a8d-9ba9-9e0d55386acd)
+
 # 9. Membuat View
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
 
@@ -111,8 +114,11 @@ public function about()
             'content' => 'Ini adalah halaman about yang menjelaskan tentang isi halaman ini.'
         ]);
     }
+    
 Lalu refresh halaman tersebut
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/5ff96271-0fcf-4251-8c08-ab54e5759f27)
+
 # 10. Membuat Layout Web dengan CSS
 Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada codeigniter. Yang perlu diketahui adalah, pada Codeigniter 4 file yang menyimpan asset css dan javascript terletak pada direktori public.
 
@@ -121,6 +127,7 @@ Buat file css pada direktori public dengan nama style.css (copy file dari prakti
 Kemudian buat folder template pada direktori view kemudian buat file header.php dan footer.php
 
 File app/views/template/header.php
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -165,14 +172,19 @@ Integer pharetra est nunc, nec pretium nunc pretium ac.</p>
 </div>
 </body>
 </html>
+
 Kemudian ubah file app/view/about.php seperti berikut.
+
 <?= $this->include('template/header'); ?>
+
 
 <h1><?= $title; ?></h1>
 <hr>
 <p><?= $content; ?></p>
 
 <?= $this->include('template/footer'); ?>
+
 Lalu refresh halaman tersebut
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/6f30cfec-b6fa-4900-a28c-1e1d8e98f1e8)
 
