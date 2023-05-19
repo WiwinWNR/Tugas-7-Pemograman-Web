@@ -34,13 +34,17 @@ Contoh error yang terjadi. Untuk mencoba error tersebut, ubah kode pada file app
 Tambahkan code pada routes.php
 
 $routes->get('/about', 'Page::about');
+
 $routes->get('/contact', 'Page::contact');
+
 $routes->get('/faqs', 'Page::faqs');
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/e0339aca-bd20-404e-baa0-f3ca90a36585)
 Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan perintah berikut.
 
 PHP Spark Routes
+
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/b8ade825-28e9-4020-9ac6-754da958d78b)
+
 Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/6ed85380-6d6c-49ad-8879-ec2b4cd87f93)
 Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
