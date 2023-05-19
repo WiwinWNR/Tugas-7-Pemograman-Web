@@ -78,6 +78,7 @@ Berikut hasil nya
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/8581ba29-c055-41b9-b114-eac3c54de5ae)
 
 # 8. Auto Routing
+
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false.
 
 $routes->setAutoRoute(true);
@@ -92,6 +93,7 @@ Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan
 ![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/6665ea2e-4ba0-4a8d-9ba9-9e0d55386acd)
 
 # 9. Membuat View
+
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
 
 <!DOCTYPE html>
