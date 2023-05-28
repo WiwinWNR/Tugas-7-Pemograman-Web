@@ -60,27 +60,11 @@ Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http:
 ![FH](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/50d1a2dc-d8ad-400d-9744-16b482d46dec)
 
 7. Membuat Controller
+
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php pada direktori Controller kemudian isi kodenya seperti berikut.
 
-<?php
+![Screenshot (178)H](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/fa3fdd4c-27fe-4f4f-964a-36824f55d89d)
 
-namespace App\Controllers;
-
-class Page extends BaseController
-{
-    public function about()
-    {
-        echo "Ini halaman About";
-    }
-    public function contact()
-    {
-        echo "Ini halaman Contact";
-    }
-    public function faqs()
-    {
-        echo "Ini halaman FAQ";
-    }
-}
 
 Berikut hasil nya
 
@@ -89,14 +73,11 @@ Berikut hasil nya
 8. Auto Routing
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true menjadi false.
 
-$routes->setAutoRoute(true);
+* $routes->setAutoRoute(true);
 
 Tambahkan method baru pada Controller Page seperti berikut.
 
-  public function tos()
-    {
-        echo "ini halaman Term of Services";
-    }
+![Screenshot (179)F](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/0375c80b-c02e-4c0b-969b-d117bad954da)
 
 Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
 
@@ -104,29 +85,10 @@ Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan
 
 9. Membuat View
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title><?= $title; ?></title>
-</head>
-<body>
-    <h1><?= $title; ?></h1>
-    <hr>
-    <p><?= $content; ?></p>
-</body>
-</html>
+![Screenshot (180)K](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/d0c6741e-d0bc-457e-a320-14717d651a14)
 
 Ubah method about pada class Controller Page menjadi seperti berikut:
-
-public function about()
-    {
-        return view('about', [
-            'title' => 'Halaman About',
-            'content' => 'Ini adalah halaman about yang menjelaskan tentang isi halaman ini.'
-        ]);
-    }
+![Screenshot (180)F](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/8f134de0-4be6-42a9-923e-86b320d21f6b)
     
 Lalu refresh halaman tersebut
 
