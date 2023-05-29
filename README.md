@@ -1,4 +1,4 @@
-# TUGAS 7 PEMOGRAMAN WEB
+# Praktikum 7: PHP Framework (Codeigniter)
 # Langkah-Langkah Praktikum
 1. Mengaktifkan ekstentsi tersebut, melalu XAMPP Control Panel, pada bagian Apache klik Config -> PHP.ini
 
