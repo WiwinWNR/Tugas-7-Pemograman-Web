@@ -15,3 +15,4 @@ $row['judul']; ?>">
 </article>
 <?php endif; ?>
 <?= $this->include('template/footer'); ?>
+<?= $pager->links(); ?>
