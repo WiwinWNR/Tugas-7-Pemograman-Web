@@ -26,11 +26,16 @@ Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin
 
 Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form 
 pencarian sebelum deklarasi tabel seperti berikut:
-<form method="get" class="form-search">
- <input type="text" name="q" value="<?= $q; ?>" placeholder="Cari data">
- <input type="submit" value="Cari" class="btn btn-primary">
-</form>
+
+![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/3d4531fc-11b0-460b-9123-a8dcc259f1c7)
+
 Dan pada link pager ubah seperti berikut.
+
 <?= $pager->only(['q'])->links(); ?>
-Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata 
-kunci tertentu pada form pencarian.
+
+Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
+
+![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/1fbe4824-4105-42fb-8310-258aa6641fb0)
+
+
+
