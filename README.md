@@ -9,16 +9,28 @@ Pada Codeigniter 4, fungsi pagination sudah tersedia pada Library sehingga cukup
 menggunakannya.
 Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode 
 pada method admin_index seperti berikut. 
+![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/27005655-32ff-4aa0-8f0e-ac66ab0b9236)
 
-public function admin_index() 
- {
- $title = 'Daftar Artikel';
- $model = new ArtikelModel();
- $data = [
- 'title' => $title,
- 'artikel' => $model->paginate(10), #data dibatasi 10 record 
-per halaman
- 'pager' => $model->pager,
- ];
- return view('artikel/admin_index', $data);
- }
+Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut dibawah deklarasi tabel data.
+ <?= $pager->links(); ?>
+
+Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
+
+![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/b89d4fff-9025-4e1f-b643-e981349e898e)
+
+# Membuat Pencarian
+Pencarian data digunakan untuk memfilter data.
+Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin_index ubah kodenya seperti berikut
+
+![image](https://github.com/WiwinWNR/Tugas-7-Pemograman-Web/assets/115921167/5975a4b4-45e1-4907-9a53-f79b9400b9df)
+
+Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form 
+pencarian sebelum deklarasi tabel seperti berikut:
+<form method="get" class="form-search">
+ <input type="text" name="q" value="<?= $q; ?>" placeholder="Cari data">
+ <input type="submit" value="Cari" class="btn btn-primary">
+</form>
+Dan pada link pager ubah seperti berikut.
+<?= $pager->only(['q'])->links(); ?>
+Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata 
+kunci tertentu pada form pencarian.
